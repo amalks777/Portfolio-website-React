@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Quicksand", sans-serif;
+  line-height: 1;
+
+  color: #ebe7ef;
+  background: radial-gradient(#070615, #05001d);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  min-height: 80rem;
+}
+#navhead{
+  font-size: 20px;
+  margin-left: 30px;
+}
+
+header {
+  text-align: center;
+  margin: 3rem 0;
+}
+
+header img {
+  height: 5rem;
+  width: 10rem;
+  object-fit: cover;
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 5rem;
+  /* background: linear-gradient(40deg, #0fd716, #0c08e8, #a21072, #03d5ff); */
+  background: linear-gradient(40deg, #0a14c8, #0c08e8, #12b4ef, #03d5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+}
+
+header p {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #f6f4f6;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+header button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(230, 221, 221);
+  color: #070615;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+header button:hover{
+background-color: #2320e0;
+  color: #f7fafa;
+}
+
+main {
+  width: 90%;
+  max-width: 50rem;
+  margin: auto;
+}
+
+#examples {
+  margin: 3rem auto;
+}
+
+#examples h2 {
+  text-align: left;
+}
+
+#examples menu {
+  justify-content: center;
+  margin: 1rem 0;
+  padding: 0;
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+#examples menu button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #a18aba;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#examples menu button:hover {
+  background-color: #1b082f;
+  color: #ebe7ef;
+}
+
+#examples menu button.active {
+  /* background-color: #7925d3; */
+  background-color: #2320e0;
+  color: #ebe7ef;
+}
+
+#tab-content {
+  padding: 1rem;
+  border-radius: 6px;
+  background-color: #10173b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+#tab-content p{
+  line-height: 25px;
+}
+
+#tab-content h3 {
+  margin: 0;
+}
+
+.container { 
+  background-color: rgb(192, 192, 192); 
+  width: 80%; 
+  border-radius: 15px;
+  margin: 15px;
+} 
+
+.skill { 
+  background-color: rgb(116, 194, 92); 
+  color: white; 
+  padding: 1%; 
+  text-align: right; 
+  font-size: 20px; 
+  border-radius: 15px; 
+} 
+
+.html { 
+  width: 80%; 
+} 
+
+.php { 
+  width: 60%; 
+} 
+
+.resume-modal{
+  border: none;
+  border-radius: 8px;
+  padding:0.5rem;
+  background-color: #ebe7ef;
+}
+.resume-modal[open] {
+  animation: slide-in-from-top 0.35s ease-out;
+}
+.resume-modal::backdrop{
+  background: #05001d;
+}
+.resume-modal button{
+  margin-top: 1rem;
+  margin-left: 15rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background: #12352f;
+  color: #edfcfa;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.resume-modal button:hover{
+  background: #051715;
+}
+.resume{
+  margin: 0;
+  padding: 0;
+  height: auto;
+}
+.resume-modal h2{
+  margin-left: 14rem;
+}
